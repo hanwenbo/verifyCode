@@ -7,7 +7,7 @@
 // | Welcome Join QQGroup 633921431
 // +----------------------------------------------------------------------
 
-namespace easySwoole\VerifyCode;
+namespace EasySwoole\VerifyCode;
 
 /**
  * 验证码处理类
@@ -45,7 +45,7 @@ class VerifyCode
      * @param string $Code 画指定的验证码
      * @return Result
      */
-    function DrawCode($Code = null)
+    function drawCode($Code = null)
     {
         // 如果传入了验证码则要重置参数
         if (!is_null($Code)) {

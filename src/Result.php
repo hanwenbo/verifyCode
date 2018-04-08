@@ -7,37 +7,37 @@
 // | Welcome Join QQGroup 633921431
 // +----------------------------------------------------------------------
 
-namespace easySwoole\VerifyCode;
+namespace EasySwoole\VerifyCode;
 
 class Result
 {
-    private $imageBody;
-    private $imageStr;
+	private $imageBody;
+	private $imageStr;
 
-    function __construct($image, $str)
-    {
-        $this->imageBody = $image;
-        $this->imageStr = $str;
-    }
+	function __construct($image, $str)
+	{
+		$this->imageBody = $image;
+		$this->imageStr = $str;
+	}
 
-    /**
-     * @return mixed
-     */
-    public function getImageBody()
-    {
-        return $this->imageBody;
-    }
+	/**
+	 * @return mixed
+	 */
+	public function getImageBody()
+	{
+		return $this->imageBody;
+	}
 
-    /**
-     * @return mixed
-     */
-    public function getImageStr()
-    {
-        return $this->imageStr;
-    }
+	/**
+	 * @return mixed
+	 */
+	public function getImageStr()
+	{
+		return $this->imageStr;
+	}
 
-    function getMineType()
-    {
-        return 'image/png';
-    }
+	function getMineType()
+	{
+		return 'image/png';
+	}
 }
